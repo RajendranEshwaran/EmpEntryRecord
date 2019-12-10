@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  EmpEntryRecord
 //
-//  Created by gomathi saminathan on 12/9/19.
+//  Created by Rajendran Eshwaran on 12/9/19.
 //  Copyright © 2019 Rajendran Eshwaran. All rights reserved.
 //
 

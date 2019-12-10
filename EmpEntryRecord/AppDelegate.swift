@@ -2,16 +2,26 @@
 //  AppDelegate.swift
 //  EmpEntryRecord
 //
-//  Created by gomathi saminathan on 12/9/19.
+//  Created by Rajendran Eshwaran on 12/9/19.
 //  Copyright © 2019 Rajendran Eshwaran. All rights reserved.
 //
 
 import UIKit
+import  CoreData
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "EmployeeDetails")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Unable to load persistent stores: \(error)")
+            }
+        }
+        return container
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
